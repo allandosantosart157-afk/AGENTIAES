@@ -95,14 +95,6 @@
         }
     </style>
     
-    <!-- Script da Hotmart -->
-    <script id="hotmart_launcher_script">
-        (function(l,a,u,n,c,h,e,r){l['HotmartLauncherObject']=c;l[c]=l[c]||function(){
-        (l[c].q=l[c].q||[]).push(arguments)},l[c].l=1*new Date();h=a.createElement(u),
-        e=a.getElementsByTagName(u)[0];h.async=1;h.src=n;e.parentNode.insertBefore(h,e)
-        })(window,document,'script','//launcher.hotmart.com/launcher.js','hot');
-        hot('account','fc3d8290-f9d5-38b6-8d5a-14b9381e7f4e');
-    </script>
 </head>
 <body>
 
@@ -123,12 +115,18 @@
             <p class="price-note">(Sin compromiso, cancela cuando quieras)</p>
         </div>
 
-        <!-- Widget de Vendas da Hotmart -->
+        <!-- SEU NOVO SCRIPT DA HOTMART FOI INSERIDO AQUI -->
+        <!-- HOTMART - Sales Funnel Widget -->
+        <!--- sales funnel container --->
         <div id="hotmart-sales-funnel"></div>
+
+        <!--- script load and setup --->
         <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
         <script>
-            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+        checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
         </script>
+        <!-- HOTMART - Sales Funnel Widget -->
+        
     </main>
 
     <footer class="footer">
